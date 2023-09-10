@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>QUIZ</title>
+	<style type="text/css">
+		img{display: block; margin: auto; width: 85%}
+	</style>
+</head>
+<body>
+	<img id="flower" src="img1.jpg">
+	<script type="text/javascript">
+		var state = false;
+
+		flower.onclick = function(){
+			if(!state){
+				flower.src = "img2.jpg";
+				state = true;
+			}
+			else{
+				flower.src = "img1.jpg";
+				state = false;
+			}
+		}
+	</script>
+</body>
+</html>
